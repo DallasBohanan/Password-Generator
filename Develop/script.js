@@ -32,6 +32,7 @@ definePasswordLength();
 
 
 
+
 // defining the available characters 
 
 var letterSet =[];
@@ -53,6 +54,8 @@ var specialCharacters;
 specialCharacters = ["!","@","#","$","%","&","?",]
 console.log(specialCharacters);
 // all available characters are defined 
+
+
 
 
 //  empty string for characters to be added is defined 
@@ -157,7 +160,7 @@ confirmCharacters();
 
 
 
-// checking randomCharacters 
+// checking randomCharacters + changing array to string 
 console.log(randomCharacters);
  randomCharacters = randomCharacters.toString();
 console.log( randomCharacters)
@@ -168,6 +171,8 @@ console.log( randomCharacters)
 // password+= Math.floor(Math.random() * .length);
 
 
+
+// generating password with  custom user data
 function generatePassword (length){
   var password = "";
  
